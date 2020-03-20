@@ -1,4 +1,5 @@
 'use strict';
+require('newrelic');
 
 /**
  * @license
@@ -8,7 +9,7 @@
  * found in the LICENSE file at the root of this repository
  */
 
-const Controller = require ("./server/controller");
+const Controller = require("./server/controller");
 
 let c = new Controller();
 c.init((registry, log, service, server, serverMaintenance) => {
