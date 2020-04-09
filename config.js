@@ -15,9 +15,9 @@ let config = {
 		memory: ''
 	},
 	serviceVersion: "1",
-	serviceName: "controller",
+	serviceName: "gateway",
 	serviceGroup: "SOAJS Core Service",
-	servicePort: 4000
+	servicePort: 3999
 };
 
 module.exports = config;
