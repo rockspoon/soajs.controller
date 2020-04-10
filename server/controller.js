@@ -65,6 +65,7 @@ Controller.prototype.init = function (callback) {
 			"maintenance": _self.soajs.param.config.maintenance
 		}, (reg) => {
 			let registry = reg;
+			console.log(JSON.stringify(registry));
 			let log = core.getLogger(_self.soajs.param.init.serviceName, registry.serviceConfig.logger);
 			if (service.fetched) {
 				if (!service.fetched.result) {
@@ -243,7 +244,7 @@ Controller.prototype.start = function (registry, log, service, server, serverMai
 				}, cb);
 			}
 		};
-		
+		console.log(JSON.stringify(registry.services.controller));
 		server.listen(registry.services.controller.port, (err) => {
 			if (err) {
 				log.error(err);
