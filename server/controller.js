@@ -65,7 +65,7 @@ Controller.prototype.init = function (callback) {
 			"maintenance": _self.soajs.param.config.maintenance
 		}, (reg) => {
 			let registry = reg;
-			console.log(JSON.stringify(registry.services.controller));
+			console.log(JSON.stringify(registry.services));
 			let log = core.getLogger(_self.soajs.param.init.serviceName, registry.serviceConfig.logger);
 			if (service.fetched) {
 				if (!service.fetched.result) {
