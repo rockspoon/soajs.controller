@@ -234,11 +234,6 @@ let ha = {
 		let latestVersion = null;
 		for (let i = 0; i < serviceVersions.length; i++) {
 			latestVersion = coreLibs.version.getLatest(latestVersion, serviceVersions[i]);
-			/*
-			if (serviceVersions[i] > latestVersion) {
-				latestVersion = serviceVersions[i];
-			}
-			*/
 		}
 		if (latestVersion) {
 			return latestVersion;
